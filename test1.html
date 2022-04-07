@@ -1,0 +1,77 @@
+<html>
+<header>
+<title>用户登录-禅道</title>
+</header>
+<body height=600 name='bd'>
+  <div id='d1' height=50 background='yellow',text-align='center'>
+    <p>首页面</p>
+  </div>
+  <div id='d2' height=500>
+    <div class='left1' width=200>
+      <p>菜单</p>
+      <p><a href='https://www.baidu.com'>java</a></p>
+      <p><a href='https://www.taobao.com'>html</a></p>
+      <p><a href='http://www.python.com'>python</a></p>
+    </div>
+    <div>
+      <p>tester001</p>
+      <table class='tb'>
+        <tbody class='tb2'>
+          <p>tester002</p>
+          <tr>
+            <td>tester003</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>
+              <p>tester004</p>
+            </td>
+            <td type='text1'></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td type='text2'></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td type='text3'></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+    </div>
+      <p>tester006</p>
+  </div>
+  <div class='foot' height=50 background='yellow',text-align='center'>
+    <p>页面底部</p>
+  </div>
+    <p>test005</p>
+</body>
+</html>
+
+xpath:
+           绝对路径： /html/body/div[2]/div[2]/table/tbody/tr[1]/td[1]
+           相对路径：//table[@class='tb']/tbody/tr[1]/td[1]
+css_selector:
+            By.CSS_SELECTOR,'div p'   :获取标签div内部所有的p标签元素
+            By.CSS_SELECTOR,'div>p'  :获取所有的父亲标签为div的p标签元素
+            By.CSS_SELECTOR,'div+p'  :获取紧跟在div标签之后的所有p标签元素   #<div></div>之后的p
+            By.CSS_SELECTOR,'#d2'     :获取属性id的值为d2的元素
+            By.CSS_SELECTOR,'.tb'       :获取属性class的值为tb的元素
+            By.CSS_SELECTOR,'[text-align="center"]'     :获取属性text-align='center'的元素     #依据By外的其它属性获取位置
+            By.CSS_SELECTOR,'[type]'   :获取属性为type的所有元素
+            By.CSS_SELECTOR,'[type~=“test”]'   :获取属性为type的内容包含text的所有元素   #模糊查找~
+            By.CSS_SELECTOR,'a[href^="https"]'   :获取href属性值以https开头的所有a标签元素
+            By.CSS_SELECTOR,'a[src$=".jpg"]'        :获取src属性值以.jpg结尾的所有a标签元素
+            By.CSS_SELECTOR,'a[src*="abc"]'         :获取src属性值包含abc的所有a标签元素
+            By.CSS_SELECTOR,'.tb2 td:nth-child(2)'         :获取父亲元素.tb2的第二个子元素的所有td标签元素
+
+
+
+
+         
